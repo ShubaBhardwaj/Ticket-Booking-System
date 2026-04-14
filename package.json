@@ -1,0 +1,32 @@
+{
+  "name": "bookmyticket",
+  "version": "1.0.0",
+  "description": "this is for ChaiCode hackathon it will build the my understanding of the doing work like in real like taking existing code and implement top of that",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ShubaBhardwaj/TicketBooking-system.git"
+  },
+  "author": "Shubham Bhardwaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShubaBhardwaj/TicketBooking-system/issues"
+  },
+  "homepage": "https://github.com/ShubaBhardwaj/TicketBooking-system#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "joi": "^18.1.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.4.1",
+    "nodemailer": "^8.0.5",
+    "pg": "^8.20.0"
+  }
+}
