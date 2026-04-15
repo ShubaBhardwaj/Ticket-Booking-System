@@ -1,6 +1,6 @@
-import { db } from "../../common/config/db";
-import ApiError from "../../common/utils/api-error";
-import { verifyAccessToken } from "../../common/utils/jwt.utils";
+import { db } from "../../common/config/db.js";
+import ApiError from "../../common/utils/api-error.js";
+import { verifyAccessToken } from "../../common/utils/jwt.utils.js";
 
 
 

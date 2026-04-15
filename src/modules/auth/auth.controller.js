@@ -44,6 +44,11 @@ const logout = async (req, res) => {
     res.clearCookie("refreshToken");
     return ApiResponse.ok(res, 'Logged out successfully');
 }
+const refresh = async (req, res) => {
+    const token = req.cookies?.refreshToken;
+    const response = await authService.refresh(token);
+    return ApiResponse.ok(res, 'Access token refreshed successfully', response);
+}
 
 const getme = async (req, res) => {
     const userId = req.user.id;
@@ -58,5 +63,6 @@ export {
     resetPassword,
     login,
     logout,
+    refresh,
     getme
 }

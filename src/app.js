@@ -1,6 +1,7 @@
 import express from 'express'
 import cookieParser from "cookie-parser";
 import authRoutes from './modules/auth/auth.routes.js';
+import ticketRoutes from './modules/ticketBooking/ticket.routes.js';
 
 export function createApplication(){
     const app = express()
@@ -18,6 +19,7 @@ export function createApplication(){
     })
 
     app.use("/api/v1/auth", authRoutes )
+    app.use("/", ticketRoutes );
     
     return app
 }
