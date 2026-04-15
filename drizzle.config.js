@@ -1,6 +1,6 @@
 // drizzle.config.js
 import dotenv from 'dotenv';
-dotenv.config({ override: true });
+dotenv.config();
 import { defineConfig } from 'drizzle-kit';
 
 export default defineConfig({
