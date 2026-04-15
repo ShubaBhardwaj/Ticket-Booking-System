@@ -1,2 +1,17 @@
 .env
 book-my-ticket/
+node_modules/
+dist/
+build/
+*.log
+.DS_Store
+.idea/
+.vscode/    
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?  
+coverage/
+*.tsbuildinfo
