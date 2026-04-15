@@ -8,6 +8,6 @@ const router = express.Router();
 
 router.get("/seats", ticketController.getAllSeats);
 
-router.put("/:id/:name",validate(TicketDto), authenticate, ticketController.bookSeat);
+router.put("/:id/:name", authenticate, validate(TicketDto), ticketController.bookSeat);
 
 export default router;
