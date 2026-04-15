@@ -3,6 +3,7 @@ import { db } from "../../common/config/db.js";
 import { seats } from "../../common/config/schema.js";
 import { eq } from "drizzle-orm";
 import ApiError from "../../common/utils/api-error.js";
+import { pool } from "../../common/config/db.js";
 
 
 const getAllSeatsService = async () => {
